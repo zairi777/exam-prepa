@@ -6,8 +6,7 @@
       http://www.springframework.org/schema/beans 
       http://www.springframework.org/schema/beans/spring-beans.xsd
       http://www.springframework.org/schema/context 
-      http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id="userService" class="com.momo.service.UserServiceImpl">
-    	<property name="userRepo" ref="userRepo"></property>
+      http://www.springframework.org/schema/context/spring-context.xsd"> 
+    <bean id="userService" class="com.momo.service.UserServiceImpl" autowire="byType">
     </bean>
 </beans>
